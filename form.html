@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+        <style> 
+            body {
+                font-family: Georgia, Times, 'Times New Roman', serif, sans-serif;
+                margin: 20px;
+                background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+            }
+            h1 {
+                text-align: center;
+                color: #f3eeee;
+            }
+           form {
+                max-width: 600px;
+                margin: auto;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+        
+           
+            
+      
+        
+            </style>
+    </head>
+    <body>
+        <h1>Form Submission</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="surname">Surname:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+         <label for="gender">Gender:</label>
+           <input type="radio" name="gender" value="male"> Male 
+           <input type="radio" name="gender" value="female"> Female<br><br>
+           
+
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </body>
+</html>
